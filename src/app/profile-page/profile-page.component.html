@@ -1,0 +1,19 @@
+<div>
+  <p>This is profile page</p>
+  <p>{{greet()}}</p>
+  <p>{{val()}}</p>
+  <ul>
+    @for (name of listName(); track $index) {
+    <li>{{name}}</li>
+    }
+  </ul>
+  @if (isAdmin()) {
+  <button (click)="changeName('Putu Arya')">Change Name</button>
+  <button (click)="addList('new list')">Add new list</button>
+  <button (click)="increment()">Increment</button>
+  }
+  @else {
+  <p>you're not admin</p>
+  }
+  <button (click)="changeIsAdmin()">Change admin status</button>
+</div>

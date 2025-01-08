@@ -3,11 +3,10 @@ import { FormControl } from '@angular/forms';
 import { GlobalModule } from '../global/global.module';
 
 @Component({
-  selector: 'app-form',
-  standalone: true,
-  imports: [GlobalModule],
-  templateUrl: './form.component.html',
-  styleUrl: './form.component.css',
+    selector: 'app-form',
+    imports: [GlobalModule],
+    templateUrl: './form.component.html',
+    styleUrl: './form.component.css'
 })
 export class FormComponent {
   bios = model<{ name: string; class: string }[]>();

@@ -2,11 +2,10 @@ import { Component, computed, effect, signal } from '@angular/core';
 import { GlobalModule } from '../global/global.module';
 
 @Component({
-  selector: 'app-dependant-linked-signal',
-  standalone: true,
-  imports: [GlobalModule],
-  templateUrl: './dependant-linked-signal.component.html',
-  styleUrl: './dependant-linked-signal.component.css',
+    selector: 'app-dependant-linked-signal',
+    imports: [GlobalModule],
+    templateUrl: './dependant-linked-signal.component.html',
+    styleUrl: './dependant-linked-signal.component.css'
 })
 export class DependantLinkedSignalComponent {
   protected readonly otherOptions = ['Email', 'Will Call', 'Postal service'];
